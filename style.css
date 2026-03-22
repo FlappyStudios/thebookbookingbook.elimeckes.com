@@ -1,0 +1,97 @@
+:root {
+    --gold: #d4af37;
+    --dark: #0f0f0f;
+    --parchment: #f4e1d2;
+    --accent: #b22222;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--parchment);
+    font-family: 'Fauna One', serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, .logo {
+    font-family: 'Cinzel', serif;
+    color: var(--gold);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: rgba(0,0,0,0.8);
+    border-bottom: 1px solid var(--gold);
+}
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav a { color: var(--gold); text-decoration: none; font-size: 0.9rem; }
+
+.hero {
+    display: flex;
+    padding: 100px 10%;
+    align-items: center;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 100%);
+}
+
+.hero-content { flex: 1; }
+.hero-content h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.hero-content span { color: var(--parchment); }
+
+.price-tag {
+    font-size: 2rem;
+    color: var(--gold);
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.cart-button {
+    background-color: var(--gold);
+    color: var(--dark);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 5px;
+}
+
+.cart-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.book-placeholder {
+    font-size: 15rem;
+    filter: drop-shadow(0 0 30px var(--gold));
+}
+
+.features { padding: 80px 10%; background: #151515; }
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    border: 1px solid #333;
+    padding: 30px;
+    background: #0a0a0a;
+    transition: border-color 0.3s;
+}
+
+.card:hover { border-color: var(--gold); }
+.card h3 { color: var(--gold); margin-top: 0; }
+
+.testimonials { padding: 60px 10%; text-align: center; font-style: italic; }
+footer { text-align: center; padding: 40px; border-top: 1px solid #333; font-size: 0.8rem; }
